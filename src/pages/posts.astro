@@ -1,0 +1,30 @@
+---
+import PostLayout from '../layouts/PostLayout.astro';
+import Card from '../components/Card.astro';
+import HeaderSimplify from '../components/HeaderSimplify.astro';
+import ContainerGrid from '../components/ContainerGrid.astro';
+import PostBar from '../components/PostBar.astro';
+---
+
+<PostLayout title="Meka.dev | Posts">
+	
+    <HeaderSimplify slot="header"/>
+
+    
+    
+    <ContainerGrid tittle='Posts Recientes' explora=''>
+        <Card picture=' Red.jpg' tittle='Un post' description='Esto es una pruebade un post' etiquetas={["Programacion", "Python", "C++"]}/>
+        <Card picture=' Red.jpg' tittle='Un post' description='Esto es una pruebade un post' etiquetas={["Programacion", "Python", "C++"]}/>
+        <Card picture=' Red.jpg' tittle='Un post' description='Esto es una pruebade un post' etiquetas={["Programacion", "Python", "C++"]}/>
+    </ContainerGrid>
+    
+    <ContainerGrid tittle='Posts' explora=''>
+        <Card picture=' Red.jpg' tittle='Un post' description='Esto es una pruebade un post' etiquetas={["Programacion", "Python", "C++"]}/>
+        <Card picture=' Red.jpg' tittle='Un post' description='Esto es una pruebade un post' etiquetas={["Programacion", "Python", "C++"]}/>
+        <Card picture=' Red.jpg' tittle='Un post' description='Esto es una pruebade un post' etiquetas={["Programacion", "Python", "C++"]}/>
+        <Card picture=' Red.jpg' tittle='Un post' description='Esto es una pruebade un post' etiquetas={["Programacion", "Python", "C++"]}/>
+        <Card picture=' Red.jpg' tittle='Un post' description='Esto es una pruebade un post' etiquetas={["Programacion", "Python", "C++"]}/>
+        <Card picture=' Red.jpg' tittle='Un post' description='Esto es una pruebade un post' etiquetas={["Programacion", "Python", "C++"]}/>
+    </ContainerGrid>
+</PostLayout>
+

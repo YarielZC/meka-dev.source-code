@@ -1,0 +1,86 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import ContainerGrid from '../components/ContainerGrid.astro';
+import ContainerSimple from '../components/ContainerSimple.astro';
+import HeaderComplete from '../components/HeaderComplete.astro';
+---
+
+<Layout title="Meka.dev">
+	<HeaderComplete slot="header"/>
+    <ContainerSimple>
+        <div class="flex items-center">
+            
+            <div class=" lg:w-9/12 mx-auto">
+                <ContainerSimple>
+                    <img class=" w-2/6 mx-auto rounded-full" src=" Logo.png" alt="">
+                    <h1 class="text-center font-bold text-3xl mt-7 cursor-default text-white">Me<span class=" text-orange-600 ">k</span>a.dev</h1>
+
+                    <p class="cursor-default text-center text-gray-200 text-opacity-80 mt-4 font-light tracking-tight">Meka.dev es una agencia de coding dirigida generalmente a programadores principiantes que necesitan aprender a programar de manera rapida y sencilla. Nuestro equipo no está formado por expertos, al contrario queremos instruirnos junto con ustedes y formar parte de nuestro viaje. No solo somos una empresa, con la ayuda de vosotros podemos formar una comunidad en la cual todos sean bienvenidos.</p>
+                </ContainerSimple>
+            </div>
+
+
+
+
+
+            <div class="lg:flex flex-col w-9/12 h-5/6 hidden">
+                <ContainerSimple>
+                    <h1 class="cursor-default font-bold text-2xl text-center">¿A qué nos dedicamos?</h1>
+                    <p class="cursor-default mt-3 font-semibold text-gray-200 text-opacity-80 text-justify tracking-tight">Nos dedicamos principalmente a subir a Instagram, contenido de aprendizaje relacionado con la programacion. (Posts, Reels, Stories, Cursos) también tenemos una comunidad de telegram.</p>
+                </ContainerSimple>
+
+                <ContainerSimple>
+                    <h1 class="cursor-default font-bold text-2xl text-center">¿Qué tenemos en mente?</h1>
+                    <p class="cursor-default mt-3 font-semibold text-gray-200 text-opacity-80 text-justify tracking-tight">En un futuro tenemos en mente realizar una página web donde estén disponibles todos nuestros cursos y sea más fácil la distribución de estos. También brindamos servicios de desarrollo de sofware o web.</p>
+                </ContainerSimple>
+            </div>
+
+        </div>
+    </ContainerSimple>
+
+    <ContainerGrid tittle='Ultimas Actualizaciones' explora=''>
+    
+        <Card picture=' Red.jpg' tittle='Un post' description='Esto es una pruebade un post' etiquetas={["Programacion", "Python", "C++"]}/>
+        <Card picture=' Red.jpg' tittle='Un post' description='Esto es una pruebade un post' etiquetas={["Programacion", "Python", "C++"]}/>
+        <div class=" hidden md:block">
+            <Card picture=' Red.jpg' tittle='Un post' description='Esto es una pruebade un post' etiquetas={["Programacion", "Python", "C++"]}/>
+        </div>
+        <div class=" hidden md:block">
+            <Card picture=' Red.jpg' tittle='Un post' description='Esto es una pruebade un post' etiquetas={["Programacion", "Python", "C++"]}/>
+        </div>
+        <div class=" hidden md:block">
+            <Card picture=' Red.jpg' tittle='Un post' description='Esto es una pruebade un post' etiquetas={["Programacion", "Python", "C++"]}/>
+        </div>
+        <div class=" hidden md:block">
+            <Card picture=' Red.jpg' tittle='Un post' description='Esto es una pruebade un post' etiquetas={["Programacion", "Python", "C++"]}/>
+        </div>
+    </ContainerGrid>      
+
+
+    <ContainerGrid tittle='Posts' explora='Explora mas posts'>
+     
+        <Card picture=' Red.jpg' tittle='Un post' description='Esto es una prueba de un post' etiquetas={["Programacion", "Python", "C++"]}/>
+
+        <Card picture=' Red.jpg' tittle='Un post' description='Esto es una prueba de un post' etiquetas={["Programacion", "Python", "C++"]}/>
+            
+        <div class=" hidden lg:block">
+            <Card picture=' Red.jpg' tittle='Un post' description='Esto es una prueba de un post' etiquetas={["Programacion", "Python", "C++"]}/>
+        </div>
+            
+      
+      
+    </ContainerGrid>
+
+    <ContainerGrid tittle='Aprende programacion con nuestros cursos' explora='Explora mas cursos'>
+
+        <Card picture=' Witcher.jpg' tittle='Cursos de Python' description='Recopilacion de posts de Meka.Dev acerca de Python' etiquetas={["Programacion", "Python"]}/>
+
+        <Card picture=' Witcher.jpg' tittle='Cursos de C++' description='Recopilacion de posts de Meka.Dev acerca de C++' etiquetas={["Programacion", "C++"]}/>
+
+        <div class=" hidden lg:block">
+            <Card picture=' Witcher.jpg' tittle='Cursos de HTML' description='Recopilacion de posts de Meka.Dev acerca de HTML' etiquetas={["Programacion", "HTML"]}/>
+        </div>    
+    </ContainerGrid>
+</Layout>
+

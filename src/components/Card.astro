@@ -1,0 +1,44 @@
+---
+interface Props {
+    picture: string,
+    tittle: string,
+    description: string,
+    etiquetas: Array<string>
+}
+
+const { tittle, description, picture, etiquetas} = Astro.props
+
+let a = ""
+
+etiquetas.map((etiqueta) =>{
+    a+=etiqueta
+})
+
+---
+
+<a class=" rounded-lg border shadow-md bg-gray-800 border-gray-700 transition flex flex-col p-4 pb-6 duration-200 ease-in-out hover:scale-100 scale-90 gap-x-2 opacity-90 hover:opacity-100 cursor-pointer">
+    
+    
+    
+    <picture class=" mb-0 pb-0 flex justify-center ">
+        <img class=" rounded-lg mb-5" src={picture} alt="1">
+    </picture>
+
+
+    <div>
+        {
+        ()=>{
+                return etiquetas.map((etiqueta) => {
+                    return <h1 class="inline py-1 px-1.5 font-semibold rounded-md bg-orange-600 mr-1">{etiqueta}</h1>
+            
+                })           
+            }
+        }
+    </div>
+    
+    
+    <h1 class=" mt-5 font-bold text-xl tracking-tight">{tittle}</h1>
+    <p class=" text-sm text-gray-400">{description}</p>
+
+</a>
+

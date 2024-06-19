@@ -1,0 +1,135 @@
+---
+import ContainerSimple from "../../components/ContainerSimple.astro";
+import PostTemplate from "../../layouts/PostTemplate.astro";
+import TextInfo from "../../components/Post/TextInfo.astro";
+import TittleInfo from "../../components/Post/TittleInfo.astro";
+import { Code } from "astro/components";
+---
+
+<PostTemplate title="Conceptos basicos de la programacion">
+<div class="flex mt-20">
+    
+    <div class="hidden lg:block xl:w-2/5 w-3/5">
+        <ContainerSimple>
+            <h1 class="text-white text-lg font-semibold mb-4">En esta pagina:</h1 class="text-white text-base font-semibold">
+                
+            <div class="ml-4 flex flex-col gap-3">
+                <a href="#1" class="text-sm text-gray-300">1. Que es la programacion?</a>
+                <a href="#2" class="text-sm text-gray-300">2. Fundamentos escenciales</a>
+                <a href="#2.1" class="ml-4 text-sm text-gray-300">2.1 Que es una variable</a>
+            </div>    
+        </ContainerSimple>
+    </div>    
+
+
+
+
+
+
+
+
+    <div>
+
+        <h1 class="text-white font-bold text-3xl px-6 py-6 border-b border-gray-800">Conceptos basicos de la programacion</h1>
+
+
+        <div class="w-3/4 md:w-2/5 sm:w-2/4 mx-auto lg:hidden">
+
+            <ContainerSimple>
+                
+    
+                    <h1 class="text-white text-lg font-semibold mb-4">En esta pagina:</h1 class="text-white text-base font-semibold">
+                        
+                    <div class="ml-4 flex flex-col gap-3">
+                        <a href="#1" class="text-sm text-gray-300">1. Que es la programacion?</a>
+                        <a href="#2" class="text-sm text-gray-300">2. Fundamentos escenciales</a>
+                        <a href="#2.1" class="ml-4 text-sm text-gray-300">2.1 Que es una variable</a>
+                    </div>    
+               
+            </ContainerSimple>
+        </div>
+
+
+
+
+
+
+
+        <ContainerSimple>
+        
+            <TextInfo class="text-gray-300 mb-3 tracking-wide font-light">
+                ¿Alguna vez has sentido curiosidad acerca del lenguaje que permite a las computadoras realizar tareas sorprendentes? Te has preguntado como funcionan las aplicaciones que utilizas a diario?
+            </TextInfo>
+
+            <TextInfo class="text-gray-300 mb-3 tracking-wide font-light">
+                La <span>programación</span>, el lenguaje de las máquinas, es un universo fascinante que te invita a <span>crear</span>, <strong>innovar</strong> y <strong>explorar</strong> el infinito potencial de la tecnología.
+            </TextInfo>
+            
+            <TextInfo class="text-gray-300 mb-3 tracking-wide font-light">
+                En este post, te guiaremos a traves de los <strong>conceptos básicos</strong> para que, de una vez por todas, comiences tu viaje en el apasionante mundo de la programación.
+            </TextInfo>
+            <span id="1"></span>
+        </ContainerSimple>
+
+
+
+
+        <TittleInfo>1. ¿Qué es la programación?</TittleInfo>
+
+        <ContainerSimple>
+
+            <TextInfo>
+                Empecemos por lo básico, ¿A que nosotros llamamos programacion?
+            </TextInfo>
+
+            <TextInfo>
+                La programación es el arte de instruir a una computadora para que realice ciertas tareas. Es como enseñarle a un niño pequeño paso a paso como hacer algo
+            </TextInfo>
+
+            <TextInfo>
+                Utilizando lenguajes de programación, los programadores escriben conjuntos de instrucciones para que las computadoras las ejecuten.
+            </TextInfo>
+            <span id="2"></span>
+        </ContainerSimple>
+
+        <TittleInfo>2. Fundamentos escenciales</TittleInfo>
+
+        <ContainerSimple>
+            <TextInfo>
+                Antes de sumigirte en la escritura de código, es crucial comprender algunos conceptos fundamentales.
+            </TextInfo>
+
+            <TextInfo>
+                Debes saber que son las <strong>variables</strong>, las <strong>estructuras de control</strong> y las <strong>funciones</strong>.
+            </TextInfo>
+
+            <TextInfo>
+                A continuación de hablaremos brevemente sobre ellas, pero dependera de ti el investigar y comprender a fondo estos conceptos.
+            </TextInfo>
+            <span id="2.1"></span>
+        </ContainerSimple>
+
+        <TittleInfo>2.1 ¿Qué es una variable?</TittleInfo>
+
+        <ContainerSimple>
+            <TextInfo>
+                Una variable en programación es un espacio de memoria con un nombre asociado, utilizado para almacenar datos que pueden cambiar durante la ejecución de un programa.
+            </TextInfo>
+            
+            <TextInfo>
+                Las variables pueden <strong>contener</strong> diversos tipos de información, como números, texto, objetos u otros valores. En la mayoría de los lenguajes de programación, se <strong>declara una variable especificando su nombre y tipo de datos que almacenará.</strong>
+            </TextInfo>
+
+            <TextInfo>
+                Por ejemplo, en Python, puedes declarar una variable y asignarle un valor de la siguiente manera:
+            </TextInfo>
+
+            <Code class="rounded-lg p-2 font-extralight text-sm" code={"numero = 10"} lang="py" title="" />
+        </ContainerSimple>
+
+    </div>
+
+
+
+</div>
+</PostTemplate>

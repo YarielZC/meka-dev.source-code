@@ -3,10 +3,11 @@ interface Props {
     picture: string,
     tittle: string,
     description: string,
-    etiquetas: Array<string>
+    etiquetas: Array<string>,
+    link: string
 }
 
-const { tittle, description, picture, etiquetas} = Astro.props
+const { tittle, description, picture, etiquetas, link} = Astro.props
 
 let a = ""
 
@@ -16,7 +17,7 @@ etiquetas.map((etiqueta) =>{
 
 ---
 
-<a class=" rounded-lg border shadow-md bg-gray-800 border-gray-700 transition flex flex-col p-4 pb-6 duration-200 ease-in-out hover:scale-100 scale-90 gap-x-2 opacity-90 hover:opacity-100 cursor-pointer">
+<a href={link} class=" rounded-lg border shadow-md bg-gray-800 border-gray-700 transition flex flex-col p-4 pb-6 duration-200 ease-in-out hover:scale-100 scale-90 gap-x-2 opacity-90 hover:opacity-100 cursor-pointer">
     
     
     
